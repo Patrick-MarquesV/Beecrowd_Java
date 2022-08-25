@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class Ex2 {
     
-    public static void Ex2(String[] args) throws IOException{
+    public static void main(String[] args) throws IOException{
         Scanner input = new Scanner(System.in);
         
         float salarioMinimo, salarioFunc;
@@ -17,7 +17,7 @@ public class Ex2 {
         System.out.print("Informe o valor do salario do funcionario: ");
         salarioFunc = input.nextFloat();
 
-        System.out.printf("O funcionario recebe %.1f salarios minimos", salarioFunc/salarioMinimo);
+        System.out.printf("\nO funcionario recebe %.1f salarios minimos", salarioFunc/salarioMinimo);
         
 
     }
