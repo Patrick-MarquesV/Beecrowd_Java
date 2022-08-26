@@ -22,7 +22,5 @@ public class Ex8{
         System.out.printf("Desconto 8%% FGTS: %.2f\n", salarioReajustado*0.08f);
         System.out.printf("Total Descontos INSS+FGTS: %.2f\n", salarioReajustado*0.19f);
         System.out.printf("Salario Final: %.2f\n", salarioReajustado*(0.81f));
-
-
     }
 }
