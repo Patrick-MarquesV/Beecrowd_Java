@@ -8,6 +8,7 @@
 // desconto de 15%. Caso as medidas não encaixem em nenhuma das regras o valor final do
 // terreno não sofrerá alterações.
 
+package Encontro23_if_else;
 import java.io.IOException;
 import java.util.Scanner;
 import java.lang.Math;
