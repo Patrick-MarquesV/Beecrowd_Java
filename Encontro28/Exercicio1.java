@@ -9,25 +9,14 @@ import java.util.Scanner;
 
 public class Exercicio1 {
    public static void main(String[] args) {
-      float peso01, peso02, peso03;
+      float peso01 = 1.0f, peso02=2.0f, peso03=3.0f;
       float nota01, nota02, nota03;
       float notaComPeso01, notaComPeso02, notaComPeso03;
       float mediaPonderada;
-      
-      Scanner teclado = new Scanner(System.in);
-      
-      peso01 = 1.0f;
-      peso02 = 2.0f;
-      peso03 = 3.0f;
          
-      System.out.print("Digite o valor da primeira nota: ");
-      nota01 = teclado.nextFloat();
-      
-      System.out.print("Digite o valor da segunda nota: ");
-      nota02 = teclado.nextFloat();
-      
-      System.out.print("Digite o valor a terceira nota: ");
-      nota03 = teclado.nextFloat();
+      nota01 = lerNota("primeira");
+      nota02 = lerNota("segunda");
+      nota03 = lerNota("terceira");
       
       notaComPeso01 = (nota01 * peso01);
       notaComPeso02 = (nota02 * peso02);
@@ -49,7 +38,13 @@ public class Exercicio1 {
          System.out.printf("As nota02 (%.2f) e nota03 (%.2f) foram as maiores notas apos o calculo dos pesos %.0f (%.2f) e %.0f (%.2f)", nota02, nota03, peso02, notaComPeso02, peso03, notaComPeso03);
       } else {
          System.out.println("As três notas foram iguais");
-      }   
-                
+      }        
    }
+
+   public static float lerNota(String palavra){
+      Scanner teclado = new Scanner(System.in);
+      System.out.print("Digite o valor da" + palavra + " nota: ");
+      return teclado.nextFloat();
+   }
+
 }

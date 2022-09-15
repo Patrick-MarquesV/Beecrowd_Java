@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.lang.Math;
 import java.io.File;
 import java.text.Normalizer;
+import java.util.Random;
 
 public class Main{
     public static void main(String[] args) throws IOException, InterruptedException{
@@ -88,7 +89,8 @@ public class Main{
 
         String palavra ="";
 
-        int aleatorio = (int)(Math.random()*71); //Gerador de numeros aleatórios de 1 a 71
+        Random generator = new Random();
+        int aleatorio = generator.nextInt(72); // gera um numero aleatória que será a linha da palavra escolhida
 
         while(aleatorio > 0){ //laço para ir até a linha do numero aleatorio gerado
             palavra = input.next().toLowerCase();
