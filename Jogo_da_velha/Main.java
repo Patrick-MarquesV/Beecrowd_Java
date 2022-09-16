@@ -50,7 +50,7 @@ public class Main {
                         linhaColuna = dificuldadeMedio(arr);
                         break;
                     case 3:
-                        linhaColuna = dificuldadeDificil(arr, jogada);
+                        linhaColuna = dificuldadeDificil(arr, jogada, linhaColuna);
                         break;
                 }
                 
@@ -162,7 +162,7 @@ public class Main {
     
     }
 
-    public static int[] dificuldadeDificil(String[][] arr, int jogada ) throws IOException, InterruptedException{
+    public static int[] dificuldadeDificil(String[][] arr, int jogada, int[] jogadaAnterior ) throws IOException, InterruptedException{
         
         Random generator = new Random();
         int aleatorio = generator.nextInt(4);
@@ -175,6 +175,7 @@ public class Main {
             return linhaColuna = primeiraJogada[aleatorio];
         } 
 
+        //Ataque
         switch(jogada){
             case 0:
                 int[][] primeiraJogada = {{0,0}, {0,2},{1,1}, {2,0}, {2,2}};
@@ -182,6 +183,14 @@ public class Main {
                 return linhaColuna = primeiraJogada[aleatorio];
 
             case 1:
+                //if((jogadaAnterior[0]==0 && jogadaAnterior[1]==1))
+                    
+                //else if (jogadaAnterior[0]==1 && jogadaAnterior[1]==0)
+
+                ////else if (jogadaAnterior[0]==1 && jogadaAnterior[1]==2)
+
+                //else if (jogadaAnterior[0]==2 && jogadaAnterior[1]==1)
+
 
             case 2:
 
@@ -193,7 +202,6 @@ public class Main {
         return arr[linhaColuna[0]][linhaColuna[1]] != "X" && arr[linhaColuna[0]][linhaColuna[1]] != "O" ? linhaColuna : dificuldadeMedio(arr);
     
     }
-
 
     public static int frequencia(String[] arr, String elemento){ //VERIFICA A QUANTIDADE DE "X" OU "O" NA ARRAY PASSADA
         int contador = 0;

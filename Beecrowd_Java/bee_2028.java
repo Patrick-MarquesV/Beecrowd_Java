@@ -6,7 +6,7 @@ public class bee_2028 {
     public static void main(String[] args) throws IOException{
         Scanner input = new Scanner(System.in);
 
-        int acc=1, entrada, contador, caso=0;
+        int entrada, contador, caso=0;
         
         while(input.hasNext()){
             StringBuilder str = new StringBuilder();

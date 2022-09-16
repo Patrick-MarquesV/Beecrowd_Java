@@ -1,4 +1,4 @@
-package Forca;
+package Jogo_forca;
 import java.util.Scanner;
 import java.io.IOException;
 import java.lang.Math;
@@ -84,7 +84,7 @@ public class Main{
     }
 
     public static String selecionaPalavra() throws IOException, InterruptedException{
-        File file = new File("Forca/texto.txt"); //inicializa o arquivo texto.txt
+        File file = new File("Jogo_forca/texto.txt"); //inicializa o arquivo texto.txt
         Scanner input = new Scanner(file);
 
         String palavra ="";
