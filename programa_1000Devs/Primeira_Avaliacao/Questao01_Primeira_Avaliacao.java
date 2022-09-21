@@ -1,3 +1,4 @@
+package programa_1000Devs.Primeira_Avaliacao;
 import java.io.IOException;
 import java.util.Scanner;
 import java.util.InputMismatchException;

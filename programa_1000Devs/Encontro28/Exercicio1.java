@@ -4,7 +4,7 @@ base em seus pesos e além de apresentar a média, exiba a maior nota entre as 3
 mensagem “As 3 notas são iguais”, ou “As notas 1 e 2 são as maiores”, “As notas 1 e 3 são as
 maiores”, “As notas 2 e 3 são as maiores” caso exista duas notas iguais e elas sejam as maiores. */
 
-package Encontro28;
+package programa_1000Devs.Encontro28;
 import java.util.Scanner;
 
 public class Exercicio1 {

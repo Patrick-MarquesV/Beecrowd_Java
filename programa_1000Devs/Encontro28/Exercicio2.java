@@ -16,7 +16,7 @@ De 3.751,06 até 4.664,68    22,5%
 Acima de 4.664,68           27,5% 
 */
 
-package Encontro28;
+package programa_1000Devs.Encontro28;
 import java.util.Scanner;
 
 public class Exercicio2 {

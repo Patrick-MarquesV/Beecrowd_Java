@@ -1,4 +1,4 @@
-package Jogo_da_velha;
+package programa_1000Devs.Jogo_da_velha;
 import java.util.Scanner;
 import java.io.IOException;
 import java.util.Random;
