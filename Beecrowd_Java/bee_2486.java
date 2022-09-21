@@ -19,8 +19,6 @@ public class bee_2486 {
 
                 foodName = foodName.trim();
 
-                //System.out.println(foodAmount + " " + foodName);                
-
                 vitaminQuantity+= vitaminCcalculator(foodName, foodAmount);                
 
             }
