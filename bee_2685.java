@@ -12,7 +12,7 @@ public class bee_2685 {
 
             int sunMoonAngle = input.nextInt();
 
-            if(sunMoonAngle<90){
+            if(sunMoonAngle<90 || sunMoonAngle==360){
                 str.append("Bom Dia!!");
             } else if(sunMoonAngle<180){
                 str.append("Boa Tarde!!");
@@ -23,9 +23,10 @@ public class bee_2685 {
             }
 
             str.append("\n");
-
-            System.out.println(str.toString());
-
+            
         }
+
+        System.out.print(str.toString());
+
     }
 }
